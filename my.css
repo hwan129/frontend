@@ -52,13 +52,11 @@ body {
   color: rgba(255, 255, 255, .5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
-  text-decoration-line: none;
   font-size: x-large;
 }
 
 .home{
   font-size: xx-large;
-  text-decoration-line: none;
   color: white;
 }
 
@@ -72,26 +70,24 @@ body {
   margin-left: 1rem;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
 
 /*
  * body
 */
 
 .table{
-  color: white;
   position: fixed;
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
   text-align: center;
+  overflow: hiddlen;      /* 줄바꿈 없애기 */
+  white-space: nowrap;    /* 줄바꿈 없애기 */
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .th, td{
