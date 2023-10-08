@@ -1,11 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>연락처 수정</title>
+
+
+<link href="my.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
     
-</body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="home" href="https://tranquil-clafoutis-edc6c7.netlify.app/">Contact</a><br>
+        <a class="nav-link active" href="#">Add</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="Edit">
+    <form action="edit_ok.php">
+        <fieldset>
+            <legend>연락처 입력</legend>
+            <label for="name">이름: </label>
+            <input type="text" id="name" name="name" required=""><br>
+
+            <label for="age">나이: </label>
+            <input type="text" id="age" name="age" required=""><br>
+
+            <label for="gender">성별: </label>
+            <input type="radio" name="gender" id="gender" value="M">남자 <input type="radio" name="gender" id="gender" value="W">여자<br>
+            
+            <label for="phone">휴대폰 번호: </label>
+            <input type="text" name="phone" id="phone" placeholder="010-****-****" pattern="[0-1]{3}-[0-9]{3,4}-[0-9]{4}" maxlength="11" required=""><br>
+
+            <label for="workPlace">직장: </label>
+            <input type="text" name="workPlace" id="workPlace" required=""><br>
+
+            <label for="relation">관계: </label>
+            <input type="text" name="relation" id="relation" required=""><br>
+
+            메모 <br>
+            <textarea name="memo" id="memo" cols="30" rows="5"></textarea><br>
+            <br>
+            <input type="submit" value="추가"> <input type="reset" value="취소">
+
+        </fieldset>
+    </form>
+  </div>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Made by 심성환.</p>
+    </div>
+  </footer>
+</div>
+  </body>
 </html>

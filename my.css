@@ -1,9 +1,6 @@
-
-
-
 @media (max-width: 768px) {
   html {
-    font-size: 5px;
+    font-size: 12px;
   }
 }
 
@@ -37,9 +34,6 @@ body {
   text-align: center;
   color:#fff;
   margin-bottom: 2rem;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .masthead-brand {
@@ -47,6 +41,9 @@ body {
 }
 
 .nav-masthead .nav-link {
+  position: fixed;
+  left: 75%;
+  transform: translateX(-25%);
   padding: .25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
@@ -56,6 +53,9 @@ body {
 }
 
 .home{
+  position: fixed;
+  left: 25%;
+  transform: translateX(-75%);
   font-size: xx-large;
   color: white;
 }
@@ -104,3 +104,18 @@ a{
   transform: translateX(-50%);
   color: rgba(255, 255, 255, .5);
 }
+
+/*
+  Add
+*/
+
+.Add{
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hiddlen;      /* 줄바꿈 없애기 */
+  white-space: nowrap;    /* 줄바꿈 없애기 */
+}
+
