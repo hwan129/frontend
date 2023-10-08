@@ -119,3 +119,11 @@ a{
   white-space: nowrap;    /* 줄바꿈 없애기 */
 }
 
+/*
+  Edit
+*/
+.editTitle{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}

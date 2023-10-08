@@ -37,3 +37,11 @@ function adding(){
 
     alert("연락처가 추가되었습니다.");
 }
+
+function deleteConfirm(){
+    if(confirm("연락처를 삭제하시겠습니까?")){
+        alert("연락처가 삭제되었습니다.")
+    } else{
+        alert("취소하였습니다.")
+    }
+}
