@@ -1,7 +1,13 @@
 @media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 1px;
   }
+}
+
+.title{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*
@@ -109,7 +115,7 @@ a{
   Add
 */
 
-.Add{
+.Add, .Edit {
   position: fixed;
   top: 50%; 
   left: 50%; 
@@ -122,8 +128,3 @@ a{
 /*
   Edit
 */
-.editTitle{
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-}
